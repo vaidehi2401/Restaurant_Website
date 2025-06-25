@@ -1,0 +1,24 @@
+.restaurant-summary {
+  max-width: 50rem;
+  margin: -10rem auto 2rem auto; /* shifts up & centers */
+  background-color: #3f3f3f; /* dark grey */
+  color: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.restaurant-summary h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.restaurant-summary p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+ 
