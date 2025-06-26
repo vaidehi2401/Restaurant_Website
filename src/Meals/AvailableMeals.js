@@ -1,5 +1,7 @@
 import React from "react";
 import "./AvailableMeals.css";
+import MealItem from "./MealItem/MealItem";
+
 
 const AvailableMeals = () => {
   const meals = [
@@ -57,13 +59,12 @@ const AvailableMeals = () => {
     <section className="meals">
       <ul>
         {meals.map((meal) => (
-          <li key={meal.id} className="meal-item">
-            <div>
-              <h3>{meal.name}</h3>
-              <p className="description">{meal.description}</p>
-              <p className="price">{meal.price}</p>
-            </div>
-          </li>
+          <MealItem
+            key={meal.id}
+            name={meal.name}
+            description={meal.description}
+            price={meal.price}
+          />
         ))}
       </ul>
     </section>

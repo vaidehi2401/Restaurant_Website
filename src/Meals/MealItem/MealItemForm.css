@@ -1,0 +1,23 @@
+.meal-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Right-align everything */
+  gap: 0.5rem;
+}
+  
+.meal-item-form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.meal-item-form button:hover,
+.meal-item-form button:active {
+  background-color: #641e03;
+}
