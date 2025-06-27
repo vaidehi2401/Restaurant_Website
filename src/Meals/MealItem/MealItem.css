@@ -17,9 +17,9 @@
 .meal-item {
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
-  display: flex;
+         display: flex;
   justify-content: space-between; /* space between left and right */
-  align-items: center;            /* vertically align */
+  align-items: center;   
 }
 
 .meal-item:last-of-type {
