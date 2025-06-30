@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import {useState} from "react";
 import './App.css';
-import Cart from './Cart/Cart';
-import Header from "./Layout/Header";
-import RestaurantSummary from './Meals/RestaurantSummary';
-import Meals from './Meals/Meals';
+import Cart from './components/Cart/Cart';
+import Header from "./components/Layout/Header";
+import RestaurantSummary from './components/Meals/RestaurantSummary';
+import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
 function App() {
   const [showCart, setShowCart] = useState(false);
   const showCartHandler=()=>{
@@ -14,13 +15,13 @@ function App() {
     setShowCart(false);
   }
   return (
-    <div className='main-div'>
+   <CartProvider>
       {showCart && <Cart onClose={hideCartHandler}/>}
       <Header onShow={showCartHandler}/>
      <main>
       <Meals/>
      </main>  
-    </div>
+   </CartProvider>
   );
 }
 
