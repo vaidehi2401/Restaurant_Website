@@ -1,4 +1,4 @@
-l/.meal-item-form {
+.meal-item-form {
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Right-align everything */
